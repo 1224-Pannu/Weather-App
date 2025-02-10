@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Weather App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav id="navbar">
+    <div class="navbar-content">
+      <h1 id="logo">WeatherApp</h1>
+      <div id="search-section">
+        <input type="text" id="city-input" placeholder="Enter city name...">
+        <button id="search-btn">Search</button>
+        <button id="current-location-btn">
+          <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Current Location Icon" style="width: 20px;">
+          Current Location
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Weather Details Section -->
+    <div id="weather-details" class="hidden">
+      <div id="city-name">City Name</div>
+      <div id="weather-icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/16999/16999531.png" alt="Weather Icon" style="width: 50px; height: 50px;">
+    </div>
+    
+      <p id="condition">Condition</p>
+      <p id="temperature">--°C</p>
+
+      <!-- Weather Stats -->
+      <div class="weather-stats">
+        <div class="stat-box" id="wind-type-box">
+          <h3>Wind Type</h3>
+          <p id="wind-type">--</p>
+        </div>
+        <div class="stat-box">
+          <img src="https://cdn-icons-png.flaticon.com/512/6587/6587775.png" alt="Temperature Icon">
+          <div>
+            <h3>Min/Max</h3>
+            <p id="min-max-value">--°C / --°C</p>
+          </div>
+        </div>
+        <div class="stat-box">
+          <img src="https://cdn-icons-png.freepik.com/512/4148/4148460.png" alt="Humidity Icon">
+          <div>
+            <h3>Humidity</h3>
+            <p id="humidity-value">--%</p>
+          </div>
+        </div>
+        <div class="stat-box">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2E6NFL4POAGHZA25NQ366BSUG5U10MKnIcQ&s" alt="Wind Icon">
+          <div>
+            <h3>Wind Speed</h3>
+            <p id="wind-speed-value">-- m/s</p>
+          </div>
+        </div>
+        <div class="stat-box">
+          <img src="https://www.svgrepo.com/show/341126/temperature-feels-like.svg" alt="Feels Like Icon">
+          <div>
+            <h3>Feels Like</h3>
+            <p id="feels-like-value">--°C</p>
+          </div>
+        </div>
+        <div class="stat-box">
+          <img src="https://cdn-icons-png.flaticon.com/512/2676/2676004.png" alt="Pressure Icon">
+          <div>
+            <h3>Pressure</h3>
+            <p id="pressure-value">-- hPa</p>
+          </div>
+        </div>
+        <div class="stat-box">
+          <img src="https://static.vecteezy.com/system/resources/previews/015/771/766/non_2x/air-quality-icon-design-free-vector.jpg" alt="Air Quality Icon">
+          <div>
+            <h3>Air Quality</h3>
+            <p id="air-quality-value">--</p>
+          </div>
+        </div>
+        <div class="stat-box">
+          <img src="https://cdn-icons-png.flaticon.com/512/8179/8179067.png" alt="Sunrise Icon">
+          <div>
+            <h3>Sunrise</h3>
+            <p id="sunrise-value">--:--</p>
+          </div>
+        </div>
+        <div class="stat-box">
+          <img src="https://png.pngtree.com/png-vector/20190629/ourmid/pngtree-sunset-icon-design-png-image_1518986.jpg" alt="Sunset Icon">
+          <div>
+            <h3>Sunset</h3>
+            <p id="sunset-value">--:--</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+  <script src="script.js"></script>
+</body>
+</html>
